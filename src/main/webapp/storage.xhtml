@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core" >
+<h:head>
+	<title>物品入库分类管理</title>
+</h:head>
+<h:body>
+<h1>物品入库分类管理</h1>
+	<h:form>
+		<fieldset>
+			<legend>物品入库分类管理</legend>
+			编号：
+			<h:inputText name="id" value="#{storage.id}" size="10" />
+			<br />名称:
+			<h:inputText name="name" value="#{storage.name}" size="10" />
+			<br />
+			<h:commandButton value="添加" action="#{storage.add}"/>
+
+		</fieldset>
+	</h:form>
+</h:body>
+</html>
